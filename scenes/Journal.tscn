@@ -7,6 +7,7 @@ disable_3d = true
 title = "Journal"
 initial_position = 1
 size = Vector2i(635, 810)
+transient = true
 content_scale_mode = 1
 script = ExtResource("1_nrcx7")
 
@@ -20,20 +21,22 @@ metadata/_edit_use_anchors_ = true
 
 [node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
 layout_mode = 2
-theme_override_constants/margin_left = 15
-theme_override_constants/margin_top = 10
-theme_override_constants/margin_right = 15
-theme_override_constants/margin_bottom = 10
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 20
 
 [node name="Entries" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_constants/separation = 20
 
 [node name="Label" type="Label" parent="PanelContainer/MarginContainer/Entries"]
 layout_mode = 2
 size_flags_horizontal = 0
-size_flags_vertical = 0
+size_flags_vertical = 1
 text = "Test"
+vertical_alignment = 1
 
 [node name="HSeparator" type="HSeparator" parent="PanelContainer/MarginContainer/Entries"]
 layout_mode = 2
@@ -41,7 +44,7 @@ layout_mode = 2
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/Entries"]
 layout_mode = 2
 
-[node name="Label2" type="Label" parent="PanelContainer/MarginContainer"]
+[node name="PageNumber" type="Label" parent="PanelContainer/MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 8
@@ -51,4 +54,5 @@ horizontal_alignment = 2
 [node name="JournalCam" type="Camera2D" parent="."]
 anchor_mode = 0
 
+[connection signal="close_requested" from="." to="." method="_on_close_requested"]
 [connection signal="gui_input" from="PanelContainer/MarginContainer" to="." method="_on_margin_container_gui_input"]

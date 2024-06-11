@@ -8,11 +8,13 @@
 script = ExtResource("1_el5k0")
 
 [node name="background" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(966.062, 549.75)
 scale = Vector2(3.24685, 3.05139)
 texture = ExtResource("2_u5w64")
 
 [node name="friend" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(142.5, 125.75)
 scale = Vector2(1.28161, 1.24595)
 texture = ExtResource("3_mwyef")
