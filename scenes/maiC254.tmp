@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://08q0qc5loybu"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_el5k0"]
+[ext_resource type="Texture2D" uid="uid://cmhqypg5b5xgv" path="res://textures/background.jpg" id="2_u5w64"]
+[ext_resource type="Texture2D" uid="uid://b3ltfyhrcp504" path="res://textures/friend.png" id="3_mwyef"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_el5k0")
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(966.062, 549.75)
+scale = Vector2(3.24685, 3.05139)
+texture = ExtResource("2_u5w64")
+
+[node name="friend" type="Sprite2D" parent="."]
+position = Vector2(142.5, 125.75)
+scale = Vector2(1.28161, 1.24595)
+texture = ExtResource("3_mwyef")

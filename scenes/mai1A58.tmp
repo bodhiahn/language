@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://08q0qc5loybu"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_el5k0"]
+[ext_resource type="Texture2D" uid="uid://cmhqypg5b5xgv" path="res://textures/background.jpg" id="2_u5w64"]
+[ext_resource type="Texture2D" uid="uid://b3ltfyhrcp504" path="res://textures/friend.png" id="3_mwyef"]
+[ext_resource type="PackedScene" uid="uid://bjg1r3vk5hoiw" path="res://scenes/textbox.tscn" id="4_14kaf"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_el5k0")
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(579, 327)
+scale = Vector2(1.9458, 1.81389)
+texture = ExtResource("2_u5w64")
+
+[node name="friend" type="Sprite2D" parent="."]
+position = Vector2(118, 103)
+texture = ExtResource("3_mwyef")
+
+[node name="textbox" parent="." instance=ExtResource("4_14kaf")]

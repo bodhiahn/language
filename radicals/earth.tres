@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Radical" load_steps=3 format=3 uid="uid://35kg236qwwnk"]
+
+[ext_resource type="Script" path="res://scripts/Radical.gd" id="1_ahe0p"]
+[ext_resource type="Texture2D" uid="uid://bwg4ekr4cmvr6" path="res://textures/earth.png" id="2_b3cio"]
+
+[resource]
+script = ExtResource("1_ahe0p")
+name = "Earth"
+symbol = ExtResource("2_b3cio")

@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://of44bp37jvru"]
+
+[ext_resource type="Texture2D" uid="uid://bmsepub5d5it7" path="res://textures/empty.png" id="1_aiq4n"]
+[ext_resource type="Script" path="res://scripts/Character.gd" id="1_tl0o3"]
+
+[node name="Character" type="AspectRatioContainer"]
+offset_right = 280.0
+offset_bottom = 298.0
+script = ExtResource("1_tl0o3")
+
+[node name="Grid" type="GridContainer" parent="."]
+layout_mode = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 2
+
+[node name="MajorLeft" type="TextureRect" parent="Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_aiq4n")
+expand_mode = 1
+
+[node name="MajorRight" type="TextureRect" parent="Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_aiq4n")
+expand_mode = 1
+
+[node name="MinorLeft" type="TextureRect" parent="Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_aiq4n")
+expand_mode = 1
+
+[node name="MinorRight" type="TextureRect" parent="Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_aiq4n")
+expand_mode = 1

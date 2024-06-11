@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjg1r3vk5hoiw"]
+
+[ext_resource type="Script" path="res://textbox.gd" id="1_f5wpw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8pt8g"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="FontFile" id="FontFile_jh3hj"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/36/0 = Vector2(0, 0)
+cache/0/36/0/ascent = 0.0
+cache/0/36/0/descent = 0.0
+cache/0/36/0/underline_position = 0.0
+cache/0/36/0/underline_thickness = 0.0
+cache/0/36/0/scale = 1.0
+cache/0/36/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/36/0/kerning_overrides/36/0 = Vector2(0, 0)
+
+[node name="textbox" type="CanvasLayer"]
+script = ExtResource("1_f5wpw")
+
+[node name="TextboxContainer" type="MarginContainer" parent="."]
+anchors_preset = -1
+offset_left = 293.0
+offset_top = 18.0
+offset_right = 717.0
+offset_bottom = 250.0
+
+[node name="Panel" type="Panel" parent="TextboxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_8pt8g")
+
+[node name="MarginContainer" type="MarginContainer" parent="TextboxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextboxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_fonts/normal_font = SubResource("FontFile_jh3hj")
+theme_override_font_sizes/normal_font_size = 36
+text = "Hello whats up guys"

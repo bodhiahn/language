@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Radical" load_steps=3 format=3 uid="uid://xfhwxi3f2wiq"]
+
+[ext_resource type="Script" path="res://scripts/Radical.gd" id="1_slu4p"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_53y0k"]
+load_path = "res://.godot/imported/empty.png-c97d2f491a6ad4c9c8f696eadc05d438.ctex"
+
+[resource]
+resource_name = "Earth"
+script = ExtResource("1_slu4p")
+name = "Empty"
+symbol = SubResource("CompressedTexture2D_53y0k")
