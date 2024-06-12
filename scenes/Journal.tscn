@@ -9,6 +9,7 @@ initial_position = 1
 size = Vector2i(635, 810)
 transient = true
 content_scale_mode = 1
+theme_override_constants/resize_margin = 30
 script = ExtResource("1_nrcx7")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
@@ -31,7 +32,7 @@ layout_mode = 2
 size_flags_vertical = 0
 theme_override_constants/separation = 20
 
-[node name="Label" type="Label" parent="PanelContainer/MarginContainer/Entries"]
+[node name="Title" type="Label" parent="PanelContainer/MarginContainer/Entries"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 1
@@ -39,9 +40,6 @@ text = "Test"
 vertical_alignment = 1
 
 [node name="HSeparator" type="HSeparator" parent="PanelContainer/MarginContainer/Entries"]
-layout_mode = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/Entries"]
 layout_mode = 2
 
 [node name="PageNumber" type="Label" parent="PanelContainer/MarginContainer"]

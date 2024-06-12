@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1g2620cxix6i"]
+
+[ext_resource type="PackedScene" uid="uid://of44bp37jvru" path="res://scenes/Character.tscn" id="1_hqmls"]
+[ext_resource type="Script" path="res://scripts/Line.gd" id="1_nrv7i"]
+
+[node name="Line" type="HBoxContainer" groups=["Lines"]]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1430.0
+offset_bottom = -958.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 0
+script = ExtResource("1_nrv7i")
+
+[node name="Character" parent="." instance=ExtResource("1_hqmls")]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Placeholder Text"

@@ -9,16 +9,15 @@ var page = 1
 func _ready():
 	addEntry("earth")
 	addEntry("stone")
+	addEntry("empty")
 
 func addEntry(charName):
 	var newEntry = entry.instantiate()
 	entries.add_child(newEntry)
 	newEntry.initialize(charName)
 	
-
 func _on_margin_container_gui_input(event):
 	pass # Replace with function body.
-
 
 func _on_close_requested():
 	hide()

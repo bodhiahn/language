@@ -9,3 +9,5 @@ func initialize(charName):
 func _on_line_edit_text_changed(new_text):
 	if (new_text != ""):
 		Characters.addGuess(character.name, new_text)
+		get_tree().call_group("Lines", "updateNote")
+		
